@@ -1,11 +1,12 @@
+
 import logging
 import requests
 
 
 # Set up the URL and message content
 base_url = "http://{}/cgi/WebCGI?1500101=account=apiuser&password=apipass&port={}&destination={}&content={}"
-ip="10.1.0.6"
-port=1
+ip="172.168.1.210" # ip of the GSM gateway
+port=1 # port of the gateway ( depends on gateways vendors )
 message = "[MSG]"  # Replace with your actual message or can be used with other Apis to get them
 phone_numbers="00213791295922" #Replace with actual phone number or can be used with other Apis to get them
 
